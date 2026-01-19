@@ -1,0 +1,9 @@
+x= int(input('input number(0 to stop):'))
+total_sum=0
+
+while(x!=0):
+   
+   total_sum+=x
+   x= int(input('input number:'))
+   
+print('total sum is',total_sum)
