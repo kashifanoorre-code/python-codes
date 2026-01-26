@@ -1,0 +1,11 @@
+list1=[1,2,3,4,2,3]
+seen=set()
+duplicates= set()
+
+for x in list1:
+    if x in seen:
+        duplicates.add(x)
+    else:
+        seen.add(x)
+        
+print(duplicates)
