@@ -1,0 +1,11 @@
+languages=['c','c++','java']
+ice_cream=['choco bites','strawberry','tender coconut',9]
+fruits=['apple','mango']
+#first method to add an element in a list
+languages.append('python')
+languages.append(fruits)
+#second method
+languages.insert(2,'machine learning')
+#third method
+languages.extend(ice_cream)
+print(languages)
