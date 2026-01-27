@@ -1,0 +1,14 @@
+n=int(input('enter number of elements:'))
+my_list=[]
+
+for i in range(n):
+    element=int(input("enter element"))
+    my_list.append(element)
+print("your list:",my_list)
+
+seen=set()
+for i in my_list:
+    if i in seen:
+        print('duplicate found',i)
+    else:
+        seen.add(i)
