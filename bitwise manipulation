@@ -1,0 +1,4 @@
+x=int(input('input value:'))
+n=int(input('input integer n:'))
+output=x>>n  #<< means multiplying 2 to the power n and >> means dividing by 2 to the power n
+print(output)
