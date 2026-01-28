@@ -1,0 +1,27 @@
+matrix=[
+    [0,0,0],
+    [0,0,0],
+    [0,0,0]
+    ]
+rows=3
+columns=3
+for i in range(rows):
+    for j in range(columns):
+        matrix[i][j]=int(input('enter element'))
+print(matrix)
+for rows in matrix:
+    print(rows)
+    
+transpose=[
+    [0,0,0],
+    [0,0,0],
+    [0,0,0]
+    ]  
+rows=3
+columns=3
+for i in range(rows):
+    for j in range(columns):
+       transpose[i][j]=matrix[j][i]
+print(transpose)
+for rows in transpose:
+    print(rows)
