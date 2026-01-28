@@ -1,0 +1,15 @@
+n= int(input('enter length of your list:'))
+my_list=[]
+
+for i in range(n):
+    element = int(input("enter your element:"))
+    my_list.append(element)
+print(my_list)
+
+for i in range(n):
+    val=my_list[i]
+    if val%2==0:
+        my_list[i]=~val
+    else:
+        my_list[i]=val<<2
+print("modified list is:",my_list)
