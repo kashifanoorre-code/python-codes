@@ -1,0 +1,18 @@
+userid=input('enter your user id:')
+
+if len(userid)>=9:
+    if userid[0:4]=='USER':
+        if userid[4:7].isdigit():
+            if userid[7].isalnum() or userid[7].isspace():
+                print("invalid username")
+            else:
+                if userid[8:].isalpha():
+                    print("correct username!",userid)
+                else:
+                    print("invalid username")
+        else:
+            print("insufficient digits!")
+    else:
+        print("begin with 'USER'")
+else:
+    print("invalid username")
