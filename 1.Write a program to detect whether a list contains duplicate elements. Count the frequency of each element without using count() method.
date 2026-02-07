@@ -1,0 +1,30 @@
+n=int(input("enter number of elements to input in list:"))
+list1=[]
+for i in range(n):
+    element=int(input("enter element:"))
+    list1.append(element)
+print(list1)
+
+seen=set()
+duplicates=set()
+count=1
+
+for i in list1:
+    if i in seen:
+        duplicates.add(i)
+        count+=1
+        
+    else:
+        seen.add(i)
+print("original list:", list1)
+print("duplicates are:",duplicates)
+
+tally={}
+for i in list1:
+    if i in tally:
+        tally[i]=tally[i]+1
+    else:
+        tally[i]=1
+        
+for i in tally:
+    print(i,"appears",tally[i],"times")
