@@ -1,0 +1,17 @@
+print("CALCULATOR")
+a=int(input("enter first number:"))
+b=int(input("enter second number:"))
+
+operator=input("enter m for multiplication, add for addition, s for subtraction and d for division:")
+if operator == "m":
+    output=a *b
+elif operator== "add":
+    output=a+b
+elif operator=="s":
+    output= a-b
+elif operator == "d":
+    operator=a/b
+else:
+    print("invalid operator!")
+    
+print(output)
