@@ -1,0 +1,18 @@
+
+#include <stdio.h>
+int summation(int n){
+    if(n==0){
+        return 0;
+    }
+    else{
+        return n%10 + summation(n/10);
+    }
+}
+int main(){
+    int result,num;
+    printf("enetr your number: ");
+    scanf("%d",&num);
+    result=summation(num);
+    printf("sum of %d digits is %d",num,result);
+    return 0;
+}
