@@ -1,0 +1,7 @@
+s1=input("enter your sentence: ")
+s1=s1.split()
+print(s1)
+s2=[]
+for i in range(len(s1)):
+    if s1[i] not in s2:
+        s2.append(s1[i])
