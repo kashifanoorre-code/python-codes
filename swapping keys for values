@@ -1,0 +1,7 @@
+dict1={
+    'apple':1,
+    'banana':2,
+    'mango':3
+}
+swapped_dict={value:key for key, value in dict1.items()}
+print(swapped_dict)
