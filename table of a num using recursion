@@ -1,0 +1,11 @@
+
+def func(num,i):
+    if(i<=10):
+        print(num,"x",i,"=", num*i)
+        func(num,i+1)
+    else:
+        return 0;
+
+num=int(input("enter your number: "))
+i=1
+func(num,i)
