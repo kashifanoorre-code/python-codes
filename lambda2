@@ -1,0 +1,10 @@
+length=int(input("enter length of list: "))
+l1=[]
+for i in range(length):
+    element=input("enter your element ")
+    l1.append(element)
+print(l1)
+
+l2=list(filter(lambda x: x.startswith('a'),l1))
+print(l2)
+  
