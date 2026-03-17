@@ -1,0 +1,14 @@
+class smartphone:
+    def __init__(self,name,colour,price):
+        self.name=name
+        self.colour=colour
+        self.price=price
+        
+    def info(self):
+        print(f"name of phone is {self.name}, colour is {self.colour},price is {self.price}")
+        
+phone1=smartphone("samsung","pink","10k")
+phone1.info()
+phone2=smartphone("iphone","orange","80k")
+phone2.info()
+        
