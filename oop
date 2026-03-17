@@ -1,0 +1,8 @@
+class car:
+    name="bmw"
+    colour="black"
+    price="10000"
+    def info(self):
+        print(f"name of car is {self.name},colour being {self.colour}, priced at {self.price}")
+a=car()
+a.info()
