@@ -1,0 +1,9 @@
+
+length=int(input("enter length of list: "))
+l1=[]
+for i in range(length):
+    element=int(input("enter radii: "))
+    l1.append(element)
+print(l1)
+l2=list(map(lambda x: 3.14*x*x,l1))
+print(l2)
