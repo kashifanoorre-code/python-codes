@@ -1,0 +1,19 @@
+class payment:
+    def process_payment(self,amount):
+        print("Processing a generic payment.")
+        
+class creditcard(payment):
+    def process_payment(self,amount):
+        print(f"Processing credit card payment of ${amount}. (Applying 2% fee)")
+class paypal(payment):
+    def process_payment(self,amount):
+        print(f"Processing PayPal payment of ${amount}. (Redirecting to PayPal login)")
+class bitcoin(payment):
+    def process_payment(self,amount):
+        print(f"Processing Bitcoin payment of ${amount}. (Checking blockchain confirmation)")
+        
+def execute(obj,amount):
+    obj.process_payment(amount)
+    
+my_card=creditcard()
+execute(creditcard(),500)
