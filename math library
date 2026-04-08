@@ -1,0 +1,6 @@
+import math
+length=10
+angle_degree=60
+angle_radian=math.radians(angle_degree)
+height=math.sin(angle_radian)*length
+print(f"height is {height: .2f} feet")
