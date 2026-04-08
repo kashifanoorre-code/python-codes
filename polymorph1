@@ -1,0 +1,17 @@
+class animal:
+    def speak(self):
+        print("some animal ")
+class dog(animal):
+    def speak(self):
+        print("woof! woof!")
+class cat(animal):
+    def speak(self):
+        print("meow! meow!")
+        
+def sound(obj):
+    obj.speak()
+    
+c=cat()
+d=dog()
+sound(c)
+sound(d)
